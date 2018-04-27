@@ -1,0 +1,27 @@
+{
+	"manifest_version": 2,
+	"name": "Envato Sales Counter",
+	"version": "1.0.0",
+	"permissions": [
+		"storage"
+	],
+	"background": {
+		"scripts": []
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"<all_urls>"
+			],
+			"js": [
+				"jquery.js",
+				"custom-scripts.js"
+			]
+		}
+	],
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_popup": "popup.html",
+		"default_title": "Envato Sales Counter"
+	}
+}

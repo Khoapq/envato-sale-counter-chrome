@@ -1,0 +1,97 @@
+<html>
+<meta charset="UTF-8" />
+<head>
+	<title>Envato Sale Counter - Chrome extension</title>
+	<script src="jquery.js"></script>
+	<script src="custom-scripts.js"></script>
+	<style>
+		body {
+			width: 450px;
+			height: 200px;
+			padding: 0;
+			margin: 0;
+			margin-bottom: 50px;
+		}
+
+		header {
+			background: #eee;
+			font-size: 12px;
+			left: 0;
+			right: 0;
+			color: #999;
+			padding: 10px 30px;
+		}
+
+		main {
+			padding: 30px;
+		}
+
+		.add_item {
+			border-top: 1px solid #eee;
+			padding-top: 30px;
+			margin-top: 50px;
+		}
+
+		footer {
+			position: fixed;
+			bottom: 0;
+			height: 30px;
+			padding-left: 30px;
+			padding-right: 30px;
+			line-height: 30px;
+			background: #eee;
+			font-size: 12px;
+			left: 0;
+			right: 0;
+			color: #999;
+		}
+
+		.list {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		.list li {
+			display: flex;
+			align-items: center;
+		}
+
+		.sale {
+			padding: 0px 10px;
+			color: limegreen;
+		}
+
+		.remove {
+			margin-right: 5px;
+		}
+
+		.times {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+	</style>
+</head>
+<body>
+
+<header>
+	<div class="times">
+		<div class="current-time">VN: <span class="number"></span></div>
+		<div class="envato-time">Envato: <span class="number"></span></div>
+	</div>
+</header>
+
+<main>
+	<ul class="list"></ul>
+	<form action="" class="add_item">
+		<input type="text" name="item_id" placeholder="Envato Product ID" />
+		<input type="submit" value="ADD" class="btn btn-primary" />
+	</form>
+</main>
+
+<footer>© 2018, by <a href="https://fb.com/khoapq.dev/" target="_blank" title="Khoapq facebook">Khoapq</a></footer>
+
+</body>
+</html>
